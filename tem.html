@@ -3,19 +3,65 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GUMA SITE</title>
-    <style>
-      body {
-  background-image: url("assets/image/template.mp4");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-    </style>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              margin: 0;
+              font-family: Arial;
+              font-size: 17px;
+            }
+            
+            #myVideo {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              min-width: 100%; 
+              min-height: 100%;
+            }
+            
+            .content {
+              position: fixed;
+              bottom: 0;
+              background: rgba(0, 0, 0, 0.5);
+              color: #f1f1f1;
+              width: 100%;
+              padding: 20px;
+            }
+            
+            #myBtn {
+              width: 200px;
+              font-size: 18px;
+              padding: 10px;
+              border: none;
+              background: #000;
+              color: #fff;
+              cursor: pointer;
+            }
+            
+            #myBtn:hover {
+              background: #ddd;
+              color: black;
+            }
 
+            .video{
+                width: auto;
+                height: auto;
+            }
+            </style>
     <body>
+        <div class="video">
+        <video autoplay muted id="myVideo">
+            <source src="image/template.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
         <div id="particles-js">
             <!--particles-js file-->
-            <script type="text/javascript" src="assets/js/particles.min.js"></script>
-            <script type="text/javascript" src="assets/js/app.js"></script>
-    </body>
+            <script type="text/javascript" src="js/particles.min.js"></script>
+            <script type="text/javascript" src="js/app.js"></script>
+        </body>
     </head>
 </html>
