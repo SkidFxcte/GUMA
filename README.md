@@ -1,2 +1,2 @@
 # GUMA
-hi fxcte
+https://skidfxcte.github.io/GUMA/
