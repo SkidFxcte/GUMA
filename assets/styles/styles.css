@@ -17,8 +17,8 @@ body{
 
 .navigation{
     position:relative;
-    width: 750px; /* 70x5 = 350 */
-    height: 150px;
+    width: min-content;
+    height: min-content;
 }
 
 .navigation ul{
